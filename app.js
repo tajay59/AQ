@@ -31,15 +31,15 @@ const url = 'mongodb://localhost:27017';                           // Connection
 const dbName = 'test';   
 
 //================== Connect to MongoDB Database ==========================
-MongoClient.connect(url, function(err, client) {                  // Use connect method to connect to the server
-  assert.equal(null, err);
-  console.log("Connected successfully to test database");
+//MongoClient.connect(url, function(err, client) //{                  // Use connect method to connect to the //server
+//  assert.equal(null, err);
+//  console.log("Connected successfully to test database");
  
-  const db = client.db(dbName);
+//  const db = client.db(dbName);
 
-  findDocuments(db, function() { client.close(); });
+//  findDocuments(db, function() { client.close(); });
 
-});
+//});
 
 //========== Insert Documents with a Query Filter ==============
 const insertDocuments = function(db, callback) {
